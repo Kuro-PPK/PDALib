@@ -1,7 +1,7 @@
 %pathsearch x86_32syscalls "/usr/include/PDALib/x86_32syscalls.asm"
 %pathsearch x86_64syscalls "/usr/include/PDALib/x86_64syscalls.asm"
 %pathsearch ESequences "/usr/include/PDALib/ESequences.asm"
-%pathsearch ERRCODE "usr/include/PDALib/ErrorCode.asm"
+%pathsearch ERRCODE "/usr/include/PDALib/ErrorCode.asm"
 
 %ifidn __OUTPUT_FORMAT__, elf
     %include x86_32syscalls
@@ -17,4 +17,3 @@
 
 %include ESequences
 %include ERRCODE
-

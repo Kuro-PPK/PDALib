@@ -1,3 +1,6 @@
+%ifndef x86_32syscalls
+%define x86_32syscalls
+
 %define restart 0
 %define exit 1
 %define fork 2
@@ -381,6 +384,16 @@
 %define arch_prctl 384
 %define syscall int 0x80
 
-%define stdInput 0
-%define stdOutput 1
-%define stdError 2
+%define stdin 0
+%define stdout 1
+%define stderr 2
+
+%define syscall_NR eax
+%define arg0 ebx
+%define arg1 ecx
+%define arg2 edx
+%define arg3 esi
+%define arg4 edi
+%define arg5 ebp
+
+%endif

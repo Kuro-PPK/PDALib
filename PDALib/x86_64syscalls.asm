@@ -1,3 +1,6 @@
+%ifndef x86_64syscalls
+%define x86_64syscalls
+
 %define read 0
 %define write 1
 %define open 2
@@ -332,6 +335,16 @@
 %define pkey_free 331
 %define statx 332
 
-%define stdInput 0
-%define stdOutput 1
-%define stdError 2
+%define stdin 0
+%define stdout 1
+%define stderr 2
+
+%define syscall_NR rax
+%define arg0 rdi
+%define arg1 rsi
+%define arg2 rdx
+%define arg3 r10
+%define arg4 r8
+%define arg5 r9
+
+%endif

@@ -1,4 +1,7 @@
-%define NERR
+%ifndef ERRCODE
+%define ERRCODE
+
+%define NERR 0
 %define EPERM 1
 %define ENOENT 2
 %define ESRCH 3
@@ -128,3 +131,5 @@
 %define EKEYREJECTED 129
 %define EOWNERDEAD 130
 %define ENOTRECOVERABLE 131
+
+%endif
