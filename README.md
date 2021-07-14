@@ -1,2 +1,13 @@
 # PDALib
-PDALib, aka Preprocessor Definitions Assembly Library, is for making Syscalls and Escape Sequences more intuitive, easier to read, memorize and maintain than numbers. It support x86 and x86_64 for now. Run install.sh to set up PDALib. It will create a folder called "PDALib" in usr/include/ and add files from the PDALib folder there. Do %include "usr/include/PDALib/all.asm" to use them. It will automatically include x86_64 or x86_32, depending on the output format you choose while assembling(currently support elf, elf32, elfx32, elf64).
+## Target
+NASM x86 and x86_64
+
+## Purpose
+1. Better portability between x86 and x86_64
+2. Better readibility
+3. Easier to maintain and memorize
+
+## Usage
+1. `sudo make install` to install or just put headers in wherever you want
+2. `%include /usr/include/PDALib/all` to use in your code (/usr/include/PDALib is standard installation location)
+3. You can check out those headers for names
